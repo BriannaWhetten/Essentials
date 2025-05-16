@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Unit1LabChallenge.ma
-//Last modified: Fri, May 16, 2025 12:06:04 AM
+//Last modified: Fri, May 16, 2025 12:29:14 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "mtoa" "5.4.5";
@@ -10,19 +10,19 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "1DFDBA9F-403D-2F1A-6DA7-2585D4C7B9D4";
+fileInfo "UUID" "AC861D51-4732-7629-A71E-EE8EA9E7F927";
 createNode transform -s -n "persp";
 	rename -uid "CB693859-4843-7902-9352-58983EEC13EE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.4939687726909341 9.8184372949266212 2.0265765977493744 ;
-	setAttr ".r" -type "double3" -39.935950999787735 50.709429156408227 2.5112807230021194e-15 ;
+	setAttr ".t" -type "double3" 3.3498987895140351 12.247434944858933 4.3668047236500414 ;
+	setAttr ".r" -type "double3" -48.935950999787806 20.70942915640822 0 ;
 	setAttr ".rp" -type "double3" 0 -4.4408920985006262e-16 0 ;
 	setAttr ".rpt" -type "double3" 1.4160238611190672e-15 -8.5750668611517964e-16 1.4230686699720963e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A5DD887A-4B36-5309-CDD9-45AEDCADF105";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.2046799836730742;
+	setAttr ".coi" 10.372888269186292;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -103,7 +103,7 @@ createNode mesh -n "ChairShape" -p "Chair";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -115,8 +115,8 @@ createNode mesh -n "ChairShape" -p "Chair";
 		0.029619236 0.020373186 0.047468856 0.029812848 0.00065103266 0.031742513 -0.0088667702 
 		-0.079140522 2.9802322e-08 0.036886282 0.032505274 -2.0489097e-08 0.0052267262 -0.020349663 
 		-2.7939677e-09 0.036806535 0.032447174 -6.519258e-09 0.0053065391 -0.020291429 -9.3132257e-10 
-		0.030655067 0.022162847 4.6566129e-10 -0.00084492844 -0.030575784 -5.5879354e-09 
-		-0.037032258 -0.11679544 1.9557774e-08 -0.011305385 -0.07384488;
+		0.030655067 0.022162847 4.6566129e-10 -0.00084492844 -0.030575784 -0.025169833 -0.005402273 
+		-0.033936132 -0.025169807 0.020324599 0.0090144435;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "433C70D4-4300-B105-444F-BD8289201B18";
 	setAttr -s 2 ".lnk";
